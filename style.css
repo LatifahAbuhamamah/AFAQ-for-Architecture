@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&display=swap');
+
+:root {
+  --greycolor: #3F4750;
+  --goldencolor: #B1915D;
+
+}
+
+* {
+  font-family: "IBM Plex Sans Arabic", sans-serif;
+}
+
+.intro {
+  position: relative;
+  background-size: cover;
+  background-position: bottom;
+  min-height: 90vh;
+  background-repeat: no-repeat;
+  background-image: radial-gradient(circle, rgba(255, 255, 255, 0), rgba(255, 221, 147, 0.384)), url('intro.jpg');
+
+}
+
+.intro h2 {
+  color: white;
+  position: absolute;
+  text-align: center;
+  top: 46%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 35px;
+  text-shadow: #3F4750 1px 1px 9px;
+}
+
+.intro p {
+  color: white;
+  position: absolute;
+  text-align: center;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+  text-shadow: #3F4750 1px 1px 9px;
+
+}
+
+.navbar {
+  background-color: var(--greycolor);
+}
+
+.navbar {
+  font-family: "IBM Plex Sans Arabic", sans-serif;
+  font-weight: 400;
+}
+
+.navbar-nav a:hover {
+  color: white;
+  background-color: #B1915D;
+  display: block;
+  border-radius: 5px;
+}
+
+#services {
+  color: var(--greycolor);
+}
+
+.service-card {
+  border-radius: 15px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  padding: 25px;
+  margin-bottom: 30px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+
+}
+
+.service-icon {
+  margin-bottom: 20px;
+  color: var(--goldencolor);
+
+}
+
+.service-title {
+  margin-bottom: 10px;
+  color: var(--greycolor)
+}
+
+.service-description {
+  margin-bottom: 0;
+  color: #868686;
+}
+
+#achievements {
+  color: var(--greycolor);
+}
+
+
+.statistic {
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 15px;
+}
+
+.statistic .count {
+  font-size: 40px;
+  font-weight: bold;
+  color: var(--goldencolor);
+  margin-bottom: 10px;
+}
+
+.statistic p {
+  font-size: 18px;
+  color: #666;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .intro {
+    min-height: 60vh;
+  }
+  .intro h2 {
+    top: 35%;
+    left: 50%;
+    font-size: 31px;
+
+  }
+    .intro p{
+      top: 75%;
+      font-size: 16px;
+      background-color: rgba(74, 74, 74, 0.171);
+      padding-bottom: 8px;
+  }
+  
+  
+  
+}
